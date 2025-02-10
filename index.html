@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip heaven</title>
+    <!-- <link rel="stylesheet" href="c.css"> -->
+    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/shopping-cart-icon-512x495-pmvbhlls.png"
+        type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: #F1F2F4;
+        }
+
+        nav {
+            /* padding-left: 4px;
+    padding-right: 4px; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 5rem;
+            background-color: #FFFFFF;
+            margin-bottom: 0.5rem;
+        }
+
+        #name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 4rem;
+            /* width: 2rem; */
+            height: 5rem;
+            /* background-color: red; */
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+
+        #flip {
+            /* color: #1C2D40; */
+            color: orangered;
+        }
+
+        #heaven {
+            color: #2294D3;
+        }
+
+        #seller {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 4rem;
+            width: 12rem;
+            height: 5rem;
+            /* background-color: red; */
+        }
+
+        #logo {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-image: url("https://static-00.iconduck.com/assets.00/building-store-icon-512x512-youuigfz.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #become {
+            font-size: 1.5rem;
+            /* width: 2rem; */
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 5rem;
+            /* background-color: magenta; */
+        }
+
+        .wrapper {
+            width: 100%;
+            height: auto;
+            background-color: #FFFFFF;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
+        header {
+            width: 100%;
+            height: 5rem;
+            background-color: #212F3C;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        header a:hover{
+                background-color:orangered;
+                
+                
+            }
+
+        header a:hover {
+            text-decoration: underline white;
+            /* color: yellow; */
+        }
+
+        #default {
+            color: orange;
+            /* background-color:blueviolet; */
+        }
+
+        .tele {
+            width: 100%;
+            height: 2.5rem;
+            background-color: #D9EAF3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tele a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+        }
+
+        .tele a:hover {
+            text-decoration: underline black;
+            color: blue;
+        }
+
+        .item-box {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+            width: 100%;
+            height: auto;
+            /* background-color: green; */
+            gap: 5px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            width: 49.5%;
+            height: 40vh;
+            /* background-color: yellow; */
+
+        }
+
+        #phone {
+            height: 40vh;
+            width: 30%;
+            /* background-color: purple; */
+        }
+
+        #phone img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        #details {
+
+            height: 40vh;
+            width: 65%;
+            /* background-color: green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        #rating {
+            color: orange;
+        }
+
+        #digrat {
+            color: #212F3C;
+        }
+
+        #pandm {
+            gap: 5px;
+            /* width: 60%; */
+            /* height: auto; */
+            /* background-color: red; */
+            display: flex;
+        }
+
+        #ratclr {
+            color: black;
+        }
+
+        h2 {
+            color: orange;
+            font-size: 16px;
+            /* background-color: black; */
+            text-align: center;
+        }
+        h1{
+                background-color: orange;
+                text-align: center;
+                color: black;
+            }
+
+        #shop {
+            display: flex;
+            justify-content: center;
+            
+            width: 100%;
+            height: 10%;
+            /* background-color: orange; */
+        }
+        #shop  button a:hover{
+                color: red;
+                font-size: 1rem;
+                transition: 0.2s;
+            }
+
+        button {
+            width: 50%;
+            height: 100%;
+            background-color: black;
+        }
+
+        button a {
+            color: #D9EAF3;
+            text-decoration: none;
+        }
+
+        footer {
+            /* flex-wrap: wrap; */
+            padding-left: 1rem;
+            padding-right: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* width: 100%; */
+            height: 4rem;
+            background-color: black;
+            color: white;
+        }
+
+        @media (min-width:375px) and (max-width:812px) {
+            nav {
+                width: 100%;
+                height: 3rem;
+            }
+
+            #name {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 2rem;
+                /* width: 2rem; */
+                height: 3rem;
+                /* background-color: red; */
+                font-size: 1rem;
+                font-weight: bolder;
+            }
+
+            #seller {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 2rem;
+                width: 9rem;
+                height: 3rem;
+                /* background-color: red; */
+            }
+
+            #logo {
+                margin-left: 8rem;
+                width: 2rem;
+                height: 2rem;
+                background-image: url("https://static-00.iconduck.com/assets.00/shopping-cart-icon-512x495-pmvbhlls.png");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #become {
+
+                display: none;
+            }
+
+            header {
+                width: 100%;
+                height: 5rem;
+                background-color: #212F3C;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            header a:hover{
+                background-color: orangered;
+                
+                
+            }
+
+            #default {
+                color: orange;
+                /* background-color:blueviolet; */
+            }
+
+            .tele a {
+                font-size: 1rem;
+            }
+
+            .item-box {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                /* justify-content: space-around; */
+                width: 100%;
+                height: auto;
+                /* background-color: green; */
+                gap: 0px;
+            }
+
+            .box {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                width: 50%;
+                height: auto;
+                /* background-color: yellow; */
+            }
+
+            #phone {
+                height: 35vh;
+                width: 96%;
+                /* background-color: purple; */
+                margin-left: auto;
+            }
+
+            #phone img {
+                width: 96%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            #details {
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 12px;
+                /* text-align: center; */
+                height: 40vh;
+                width: 95%;
+                /* background-color: green; */
+                display: flex;
+                flex-direction: column;
+                /* justify-content: center;
+                   align-items: center; */
+                /* border: 1px solid black; */
+            }
+
+            h2 {
+                color: orange;
+                font-size: 16px;
+                background-color: black;
+                text-align: center;
+            }
+            h1{
+                background-color: orange;
+                text-align: center;
+                color: black;
+            }
+
+            #phone-name {
+                font-weight: bolder;
+            }
+
+            #rating {
+                color: orange;
+            }
+
+            #pandm {
+                /* gap: 5px; */
+
+                /* display: flex; */
+                display: inline-block;
+            }
+
+            #ratclr {
+                color: black;
+            }
+
+            #shop {
+                width: 100%;
+                height: 10%;
+                background-color: orange;
+            }
+            #shop  button a:hover{
+                color: red;
+                font-size: 1rem;
+                
+            }
+
+            button {
+                width: 100%;
+                height: 100%;
+                background-color: black;
+            }
+
+            button a {
+                color: #D9EAF3;
+                text-decoration: none;
+            }
+
+            footer span {
+                font-size: 0.8rem;
+            }
+
+        }
+
+
+        @media (min-width:340px) and (max-width:740px){
+            nav {
+                width: 100%;
+                height: 3rem;
+            }
+
+            #name {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 2rem;
+                /* width: 2rem; */
+                height: 3rem;
+                /* background-color: red; */
+                font-size: 1rem;
+                font-weight: bolder;
+            }
+
+            #seller {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 2rem;
+                width: 9rem;
+                height: 3rem;
+                /* background-color: red; */
+            }
+
+            #logo {
+                margin-left: 8rem;
+                width: 2rem;
+                height: 2rem;
+                background-image: url("https://static-00.iconduck.com/assets.00/shopping-cart-icon-512x495-pmvbhlls.png");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            #become {
+
+                display: none;
+            }
+
+            header {
+                width: 100%;
+                height: 5rem;
+                background-color: #212F3C;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            header a:hover{
+                background-color:orangered;
+                
+                
+            }
+           
+
+            #default {
+                color: orange;
+                /* background-color:blueviolet; */
+            }
+
+            .tele a {
+                font-size: 1rem;
+            }
+
+            .item-box {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                /* justify-content: space-around; */
+                width: 100%;
+                height: auto;
+                /* background-color: green; */
+                gap: 0px;
+            }
+
+            .box {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                width: 50%;
+                height: auto;
+                /* background-color: yellow; */
+            }
+
+            #phone {
+                height: 35vh;
+                width: 96%;
+                /* background-color: purple; */
+                margin-left: auto;
+            }
+
+            #phone img {
+                width: 96%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            #details {
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 12px;
+                /* text-align: center; */
+                height: 40vh;
+                width: 95%;
+                /* background-color: green; */
+                display: flex;
+                flex-direction: column;
+                /* justify-content: center;
+                   align-items: center; */
+                /* border: 1px solid black; */
+            }
+
+            h2 {
+                color: orange;
+                font-size: 16px;
+                background-color: black;
+                text-align: center;
+            }
+            h1{
+                background-color: orange;
+                text-align: center;
+                color: black;
+            }
+
+            #phone-name {
+                font-weight: bolder;
+            }
+
+            #rating {
+                color: orange;
+            }
+
+            #pandm {
+                /* gap: 5px; */
+
+                /* display: flex; */
+                display: inline-block;
+            }
+
+            #ratclr {
+                color: black;
+            }
+
+            #shop {
+                width: 100%;
+                height: 10%;
+                background-color: orange;
+            }
+            #shop  button a:hover{
+                color: red;
+                font-size: 1rem;
+            }
+           
+
+            button {
+                width: 100%;
+                height: 100%;
+                background-color: black;
+            }
+
+            button a {
+                color: #D9EAF3;
+                
+                text-decoration: none;
+            }
+
+            footer span {
+                font-size: 0.8rem;
+            }
+        }
+        @media (min-width:1280px) and (max-width:950px)
+    </style>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <div id="name">
+            <div id="flip">Flip</div>
+            <div id="heaven">Heaven</div>
+        </div>
+        <div id="seller">
+            <div id="logo"></div>
+            <div id="become">
+                <p>Become a Seller</p>
+            </div>
+        </div>
+    </nav>
+    <!-- nav -->
+    <div class="wrapper">
+        <header>
+            <a href="#" id="default">iPhone's</a>
+            <a href="#">iQOO</a>
+            <a href="#">Asus</a>
+            <a href="#">Oneplus</a>
+            <a href="#">poco</a>
+        </header>
+        <div class="tele">
+            <a href="#">for instant deals join us on telegram</a>
+        </div>
+        <h1>iPhone </h1>
+        <div class="item-box">
+            <div class="box">
+                <div id="phone"><img src="https://m.media-amazon.com/images/I/71xb2xkN5qL._SX679_.jpg"
+                        alt="iphone 15 pro max 256 gb">
+                </div>
+                <div id="details">
+                    <div id="choice">
+                        <h2>Amazon's Choice</h2>
+                    </div>
+                    <div id="phone-name">Apple iPhone 13 (256GB) - Blue </div>
+                    <div id="sold">1k plus bought in past month</div>
+                    <div id="rating"><b id="ratclr">Rating: </b>&#9733;&#9733;&#9733;&#9733;&#9733; <div id="digrat">
+                            (853 global ratings)</div>
+                    </div>
+                    <div id="pandm">
+                        <div id="rupee">&#8377;<b>54,999</b></div>
+                        <div id="mrp">M.R.P:<del> &#8377;54,999</del></div>
+                        <div id="discount"> (0 % discount)</div>
+                    </div>
+                    <div id="delevery">FREE delivery <b>sun, 4 Aug</b> Or fastest delivery <b>Today</b></div>
+                    <div id="service">Service: <del>Installation</del></div>
+                    <div id="shop"><button type="submit"><a href="#"><del>Shop Now</del></a></button></div>
+                </div>
+            </div>
+            <div class="box">
+                <div id="phone"><img src="https://m.media-amazon.com/images/I/71xb2xkN5qL._SX679_.jpg"
+                        alt="iphone 15 pro max 256 gb">
+                </div>
+                <div id="details">
+                    <div id="choice">
+                        <h2>Flip heaven's Choice</h2>
+                    </div>
+                    <div id="phone-name">Apple iPhone 13 (256GB) - Blue </div>
+                    <div id="sold">12.6k plus bought in past month</div>
+                    <div id="rating"><b id="ratclr">Rating: </b>&#9733;&#9733;&#9733;&#9733;&#9733; <div id="digrat">
+                            (9,266 global ratings)</div>
+                    </div>
+                    <div id="pandm">
+                        <div id="rupee">&#8377;<b>40,500</b></div>
+                        <div id="mrp">M.R.P: &#8377;40,500</del></div>
+                        <div id="discount"> (25% discount)</div>
+                    </div>
+                    <div id="delevery">FREE delivery <b>sun, 4 Aug</b> Or fastest delivery <b>Today</b></div>
+                    <div id="service">Service: <del>Installation</del></div>
+                    <div id="shop"><button type="submit"><a href="#">Shop Now</a></button></div>
+                </div>
+            </div>
+           
+        </div>
+
+      
+
+       
+        <h1>iPhone 15 Pro</h1>
+       
+        
+       
+       
+        <footer>
+            <span id="copyright">Copyright &copy; Flip heaven</span>
+            <span id="love">Made with &hearts; by Amit</span>
+        </footer>
+    </div>
+</body>
+
+</html>
