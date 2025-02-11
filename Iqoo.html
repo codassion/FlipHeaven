@@ -31,6 +31,9 @@
             height: 5rem;
             background-color: #FFFFFF;
             margin-bottom: 0.5rem;
+            position: fixed;
+            top: 0%;
+            border-bottom: 4px solid black;
         }
 
         #name {
@@ -98,6 +101,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+            margin-top: 5rem;
         }
 
         header a {
@@ -700,7 +704,7 @@
         </div>
 
 
-       
+
 
 
         <footer>
@@ -710,21 +714,21 @@
     </div>
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let today = new Date();
-        today.setDate(today.getDate() + 4); // 4 दिन आगे की तारीख
-        
-        // तारीख को सही फॉर्मेट में लाने के लिए
-        let options = { year: 'numeric', month: 'long', day: 'numeric' };
-        let futureDate = today.toLocaleDateString('en-GB', options);
-        
-        // सभी "Expected delivery date" वाले डिव को अपडेट करें
-        document.querySelectorAll("#delevery").forEach(function (ele) {
-            ele.innerHTML = `<b>Expected delivery date:</b> ${futureDate}`;
+        document.addEventListener("DOMContentLoaded", function () {
+            let today = new Date();
+            today.setDate(today.getDate() + 4); // 4 दिन आगे की तारीख
+
+            // तारीख को सही फॉर्मेट में लाने के लिए
+            let options = { year: 'numeric', month: 'long', day: 'numeric' };
+            let futureDate = today.toLocaleDateString('en-GB', options);
+
+            // सभी "Expected delivery date" वाले डिव को अपडेट करें
+            document.querySelectorAll("#delevery").forEach(function (ele) {
+                ele.innerHTML = `<b>Expected delivery date:</b> ${futureDate}`;
+            });
         });
-    });
-</script>
-   
+    </script>
+
 </body>
 
 </html>
