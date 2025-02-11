@@ -630,15 +630,15 @@
     <div class="wrapper">
         <header>
             <a href="#" id="default">iPhone's</a>
-            <a href="#">iQOO</a>
-            <a href="#">Asus</a>
-            <a href="#">Oneplus</a>
-            <a href="#">poco</a>
+            <a href="Iqoo.html" target="main">iQOO</a>
+            <a href="asus.html"target="main">Asus</a>
+            <a href="oneplus.html" target="main">Oneplus</a>
+            <a href="poco.html" target="main">poco</a>
         </header>
         <div class="tele">
             <a href="#">for instant deals join us on telegram</a>
         </div>
-        <h1>iPhone 13 series </h1>
+        <h1>iPhone 13 Series </h1>
         <div class="item-box">
             <div class="box">
                 <div id="phone"><img src="https://m.media-amazon.com/images/I/71xb2xkN5qL._SX679_.jpg"
@@ -1304,6 +1304,7 @@
                     <div id="service">Service: <del>Installation</del></div>
                     <div id="shop"><button type="submit"><a href="#">Shop Now</a></button></div>
                 </div>
+                
             </div>
            
         </div>
@@ -1314,6 +1315,22 @@
             <span id="love">Made with &hearts; by Amit</span>
         </footer>
     </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let today = new Date();
+        today.setDate(today.getDate() + 4); // 4 दिन आगे की तारीख
+        
+        // तारीख को सही फॉर्मेट में लाने के लिए
+        let options = { year: 'numeric', month: 'long', day: 'numeric' };
+        let futureDate = today.toLocaleDateString('en-GB', options);
+        
+        // सभी "Expected delivery date" वाले डिव को अपडेट करें
+        document.querySelectorAll("#delevery").forEach(function (ele) {
+            ele.innerHTML = `<b>Expected delivery date:</b> ${futureDate}`;
+        });
+    });
+</script>
 </body>
 
 </html>
